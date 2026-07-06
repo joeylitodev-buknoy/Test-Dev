@@ -176,6 +176,6 @@ if st.session_state.feedback_shown:
 
     st.write(feedback_completion.choices[0].message.content)
 
-    # Button to restart the interview
+    # Button to restart the interview (test) additional message
     if st.button("Restart Interview", type="primary"):
             streamlit_js_eval(js_expressions="parent.window.location.reload()")
